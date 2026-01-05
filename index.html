@@ -5,112 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>沖繩 5D4N 不開車之旅</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f0f7f9; }
+        body { font-family: -apple-system, system-ui, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f0f7f9; }
         h1 { color: #0077b6; text-align: center; border-bottom: 2px solid #0077b6; padding-bottom: 10px; }
         .day-card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         .day-title { color: #00b4d8; font-size: 1.4em; font-weight: bold; border-left: 5px solid #00b4d8; padding-left: 10px; margin-bottom: 15px; }
-        .time-slot { display: flex; margin-bottom: 10px; border-bottom: 1px dashed #eee; padding-bottom: 5px; }
-        .time { font-weight: bold; min-width: 100px; color: #0077b6; }
+        .time-slot { display: flex; margin-bottom: 10px; border-bottom: 1px dashed #eee; padding-bottom: 8px; align-items: center; justify-content: space-between; }
+        .info { display: flex; align-items: center; }
+        .time { font-weight: bold; min-width: 80px; color: #0077b6; font-size: 0.9em; }
+        .map-btn { font-size: 0.8em; color: white; background-color: #0077b6; text-decoration: none; padding: 4px 8px; border-radius: 20px; white-space: nowrap; margin-left: 10px; }
         .transport { background: #e0f2f1; color: #00695c; padding: 2px 8px; border-radius: 4px; font-size: 0.85em; display: inline-block; margin-bottom: 10px; }
-        .tips-section { background: #fff3e0; border-left: 5px solid #ff9800; padding: 15px; border-radius: 8px; margin-top: 30px; }
         .food-tag { color: #e63946; font-weight: bold; }
-        .check-item { cursor: pointer; transition: 0.3s; }
-        .check-item:hover { background-color: #f9f9f9; }
-        input[type="checkbox"] { margin-right: 10px; transform: scale(1.2); }
+        .tips-section { background: #fff3e0; border-left: 5px solid #ff9800; padding: 15px; border-radius: 8px; margin-top: 30px; }
+        input[type="checkbox"] { transform: scale(1.2); margin-right: 10px; }
     </style>
 </head>
 <body>
 
-    <h1>🌊 沖繩 5D4N 自由行 (不開車版)</h1>
+    <h1>🌊 沖繩 5D4N 不開車之旅</h1>
 
     <div class="day-card">
-        <div class="day-title">Day 1：那霸市區與國際通</div>
+        <div class="day-title">Day 1：那霸與國際通</div>
         <div class="transport">🚲 交通：單軌電車</div>
-        <div class="time-slot">
-            <div class="time">16:00 - 18:00</div>
-            <div>國際通巷弄散步 (浮島通、壺屋通)</div>
-        </div>
-        <div class="time-slot">
-            <div class="time">晚餐</div>
-            <div><span class="food-tag">肉屋 ししや</span> 或 <span class="food-tag">燒肉 Motobu 牧場</span></div>
-        </div>
-        <div class="time-slot">
-            <div class="time">點心</div>
-            <div>富士屋紅豆冰 / Blue Seal 冰淇淋</div>
-        </div>
+        <div class="time-slot"><div class="info"><span class="time">16:00</span><span>國際通、浮島通散步</span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=國際通">📍地圖</a></div>
+        <div class="time-slot"><div class="info"><span class="time">晚餐</span><span><span class="food-tag">肉屋 ししや</span></span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=肉屋ししや">📍地圖</a></div>
+        <div class="time-slot"><div class="info"><span class="time">晚餐案B</span><span><span class="food-tag">燒肉 Motobu 牧場</span></span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=燒肉Motobu牧場那霸店">📍地圖</a></div>
     </div>
 
     <div class="day-card">
-        <div class="day-title">Day 2：瀨長島與海景水族館</div>
+        <div class="day-title">Day 2：瀨長島與水族館</div>
         <div class="transport">🚌 交通：TK02 巴士 / Uber</div>
-        <div class="time-slot">
-            <div class="time">11:00 - 14:00</div>
-            <div>瀨長島看飛機海景 <br>🍴 <span class="food-tag">幸福鬆餅</span> (需預約)</div>
-        </div>
-        <div class="time-slot">
-            <div class="time">14:30 - 17:30</div>
-            <div>DMM Kariyushi 水族館 + iias 豐崎購物</div>
-        </div>
-        <div class="time-slot">
-            <div class="time">晚餐</div>
-            <div><span class="food-tag">島豚屋</span> 蒸籠豬肉料理</div>
-        </div>
+        <div class="time-slot"><div class="info"><span class="time">11:00</span><span>瀨長島 <span class="food-tag">幸福鬆餅</span></span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=幸福鬆餅瀨長島">📍地圖</a></div>
+        <div class="time-slot"><div class="info"><span class="time">14:30</span><span>DMM Kariyushi 水族館</span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=DMM水族館">📍地圖</a></div>
+        <div class="time-slot"><div class="info"><span class="time">晚餐</span><span><span class="food-tag">島豚屋</span> (蒸籠豬)</span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=島豚屋那霸">📍地圖</a></div>
     </div>
 
     <div class="day-card">
-        <div class="day-title">Day 3：美國村海邊漫步</div>
-        <div class="transport">🚌 交通：北谷接駁巴士 (Chatan Liner)</div>
-        <div class="time-slot">
-            <div class="time">11:30 - 13:30</div>
-            <div>🍴 <span class="food-tag">豬肉蛋飯糰 (北谷店)</span> 邊看海邊吃</div>
-        </div>
-        <div class="time-slot">
-            <div class="time">14:00 - 17:00</div>
-            <div>美國村逛街 + <span class="food-tag">Seaside Cafe Hanon</span> 夕陽鬆餅</div>
-        </div>
-        <div class="time-slot">
-            <div class="time">18:00 - 20:00</div>
-            <div>🍴 <span class="food-tag">琉球之牛</span> 或 <span class="food-tag">和牛 州</span></div>
-        </div>
+        <div class="day-title">Day 3：美國村</div>
+        <div class="transport">🚌 交通：北谷接駁巴士</div>
+        <div class="time-slot"><div class="info"><span class="time">11:30</span><span><span class="food-tag">豬肉蛋飯糰</span> (北谷店)</span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=豬肉蛋飯糰北谷店">📍地圖</a></div>
+        <div class="time-slot"><div class="info"><span class="time">14:00</span><span>Seaside Cafe Hanon</span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Seaside+Cafe+Hanon">📍地圖</a></div>
+        <div class="time-slot"><div class="info"><span class="time">18:00</span><span><span class="food-tag">琉球之牛</span> (北谷店)</span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=琉球之牛北谷店">📍地圖</a></div>
     </div>
 
     <div class="day-card">
         <div class="day-title">Day 4：來客夢血拼</div>
         <div class="transport">🚌 交通：152號高速巴士</div>
-        <div class="time-slot">
-            <div class="time">11:00 - 17:00</div>
-            <div>AEON MALL Okinawa Rycom <br>🥐 必吃：世界第二好吃的菠蘿麵包</div>
-        </div>
-        <div class="time-slot">
-            <div class="time">晚餐</div>
-            <div>🍴 <span class="food-tag">目利きの銀次</span> (新都心店)</div>
-        </div>
+        <div class="time-slot"><div class="info"><span class="time">11:00</span><span>AEON Mall 來客夢</span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=AEON+MALL+Okinawa+Rycom">📍地圖</a></div>
+        <div class="time-slot"><div class="info"><span class="time">晚餐</span><span><span class="food-tag">目利きの銀次</span> (新都心)</span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=目利きの銀次新都心店">📍地圖</a></div>
     </div>
 
     <div class="day-card">
-        <div class="day-title">Day 5：文化巡禮與歸途</div>
+        <div class="day-title">Day 5：首里城與回程</div>
         <div class="transport">🚲 交通：單軌電車</div>
-        <div class="time-slot">
-            <div class="time">09:30 - 12:00</div>
-            <div>首里城漫步 (古蹟與風景)</div>
-        </div>
-        <div class="time-slot">
-            <div class="time">12:00 - 13:30</div>
-            <div>🍴 <span class="food-tag">通堂拉麵</span> 或 <span class="food-tag">首里麵</span></div>
-        </div>
-        <div class="time-slot">
-            <div class="time">14:00 - 15:30</div>
-            <div>小祿站 AEON 最後補貨 → 機場</div>
-        </div>
+        <div class="time-slot"><div class="info"><span class="time">09:30</span><span>首里城</span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=首里城">📍地圖</a></div>
+        <div class="time-slot"><div class="info"><span class="time">12:00</span><span><span class="food-tag">通堂拉麵</span> (小祿店)</span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=通堂拉麵小祿站">📍地圖</a></div>
     </div>
 
     <div class="tips-section">
-        <h3>📌 行前小清單</h3>
-        <label class="check-item"><input type="checkbox"> 預約「琉球之牛」</label><br>
-        <label class="check-item"><input type="checkbox"> 預約「幸福鬆餅」</label><br>
-        <label class="check-item"><input type="checkbox"> 手機綁定 Suica (西瓜卡)</label><br>
-        <label class="check-item"><input type="checkbox"> 下載 DiDi / Uber App</label><br>
-        <p><i>* 溫馨提示：58號公路易塞車，記得預留 20 分鐘緩衝！</i></p>
+        <h3>📌 備註與待辦</h3>
+        <label><input type="checkbox"> 預約琉球之牛/幸福鬆餅</label><br>
+        <label><input type="checkbox"> 手機綁定 Suica</label><br>
+        <p>💡 58號公路易塞車，預留20分鐘！</p>
     </div>
 
 </body>
