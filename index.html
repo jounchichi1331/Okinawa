@@ -12,10 +12,13 @@
         .time-slot { display: flex; margin-bottom: 10px; border-bottom: 1px dashed #eee; padding-bottom: 8px; align-items: center; justify-content: space-between; }
         .info { display: flex; align-items: center; }
         .time { font-weight: bold; min-width: 80px; color: #0077b6; font-size: 0.9em; }
-        .map-btn { font-size: 0.8em; color: white; background-color: #0077b6; text-decoration: none; padding: 4px 8px; border-radius: 20px; white-space: nowrap; margin-left: 10px; }
+        .map-btn { font-size: 0.75em; color: white; background-color: #0077b6; text-decoration: none; padding: 4px 10px; border-radius: 20px; white-space: nowrap; margin-left: 10px; }
         .transport { background: #e0f2f1; color: #00695c; padding: 2px 8px; border-radius: 4px; font-size: 0.85em; display: inline-block; margin-bottom: 10px; }
+        .dinner-box { background: #fff5f5; border: 1px solid #ffdede; padding: 12px; border-radius: 8px; margin-top: 10px; }
+        .dinner-title { color: #e63946; font-weight: bold; font-size: 0.95em; margin-bottom: 8px; display: block; }
         .food-tag { color: #e63946; font-weight: bold; }
-        .tips-section { background: #fff3e0; border-left: 5px solid #ff9800; padding: 15px; border-radius: 8px; margin-top: 30px; }
+        .extra-section { background: #e3f2fd; border-left: 5px solid #2196f3; padding: 15px; border-radius: 8px; margin-top: 20px; }
+        .tips-section { background: #fff3e0; border-left: 5px solid #ff9800; padding: 15px; border-radius: 8px; margin-top: 20px; }
         input[type="checkbox"] { transform: scale(1.2); margin-right: 10px; }
     </style>
 </head>
@@ -27,8 +30,11 @@
         <div class="day-title">Day 1：那霸與國際通</div>
         <div class="transport">🚲 交通：單軌電車</div>
         <div class="time-slot"><div class="info"><span class="time">16:00</span><span>國際通、浮島通散步</span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=國際通">📍地圖</a></div>
-        <div class="time-slot"><div class="info"><span class="time">晚餐</span><span><span class="food-tag">肉屋 ししや</span></span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=肉屋ししや">📍地圖</a></div>
-        <div class="time-slot"><div class="info"><span class="time">晚餐案B</span><span><span class="food-tag">燒肉 Motobu 牧場</span></span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=燒肉Motobu牧場那霸店">📍地圖</a></div>
+        <div class="dinner-box">
+            <span class="dinner-title">🍴 晚餐推薦清單：</span>
+            <div class="time-slot"><div class="info"><span><span class="food-tag">肉屋 ししや</span> (現煎和牛)</span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=肉屋ししや">📍地圖</a></div>
+            <div class="time-slot"><div class="info"><span><span class="food-tag">燒肉 Motobu 牧場</span> (本部牛)</span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=燒肉Motobu牧場那霸店">📍地圖</a></div>
+        </div>
     </div>
 
     <div class="day-card">
@@ -36,7 +42,10 @@
         <div class="transport">🚌 交通：TK02 巴士 / Uber</div>
         <div class="time-slot"><div class="info"><span class="time">11:00</span><span>瀨長島 <span class="food-tag">幸福鬆餅</span></span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=幸福鬆餅瀨長島">📍地圖</a></div>
         <div class="time-slot"><div class="info"><span class="time">14:30</span><span>DMM Kariyushi 水族館</span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=DMM水族館">📍地圖</a></div>
-        <div class="time-slot"><div class="info"><span class="time">晚餐</span><span><span class="food-tag">島豚屋</span> (蒸籠豬)</span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=島豚屋那霸">📍地圖</a></div>
+        <div class="dinner-box">
+            <span class="dinner-title">🍴 晚餐推薦清點：</span>
+            <div class="time-slot"><div class="info"><span><span class="food-tag">島豚屋</span> (蒸籠阿古豬)</span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=島豚屋那霸">📍地圖</a></div>
+        </div>
     </div>
 
     <div class="day-card">
@@ -44,21 +53,42 @@
         <div class="transport">🚌 交通：北谷接駁巴士</div>
         <div class="time-slot"><div class="info"><span class="time">11:30</span><span><span class="food-tag">豬肉蛋飯糰</span> (北谷店)</span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=豬肉蛋飯糰北谷店">📍地圖</a></div>
         <div class="time-slot"><div class="info"><span class="time">14:00</span><span>Seaside Cafe Hanon</span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Seaside+Cafe+Hanon">📍地圖</a></div>
-        <div class="time-slot"><div class="info"><span class="time">18:00</span><span><span class="food-tag">琉球之牛</span> (北谷店)</span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=琉球之牛北谷店">📍地圖</a></div>
+        <div class="dinner-box">
+            <span class="dinner-title">🍴 晚餐推薦清單：</span>
+            <div class="time-slot"><div class="info"><span><span class="food-tag">琉球之牛</span> (北谷店)</span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=琉球之牛北谷店">📍地圖</a></div>
+            <div class="time-slot"><div class="info"><span><span class="food-tag">和牛 州 WaGyu Syu</span></span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=和牛州北谷">📍地圖</a></div>
+        </div>
     </div>
 
     <div class="day-card">
         <div class="day-title">Day 4：來客夢血拼</div>
         <div class="transport">🚌 交通：152號高速巴士</div>
-        <div class="time-slot"><div class="info"><span class="time">11:00</span><span>AEON Mall 來客夢</span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=AEON+MALL+Okinawa+Rycom">📍地圖</a></div>
-        <div class="time-slot"><div class="info"><span class="time">晚餐</span><span><span class="food-tag">目利きの銀次</span> (新都心)</span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=目利きの銀次新都心店">📍地圖</a></div>
+        <div class="time-slot"><div class="info"><span class="time">11:00</span><span>AEON Mall 來客夢</span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=AEON+Mall+Okinawa+Rycom">📍地圖</a></div>
+        <div class="dinner-box">
+            <span class="dinner-title">🍴 晚餐推薦清單：</span>
+            <div class="time-slot"><div class="info"><span><span class="food-tag">目利きの銀次</span> (新都心店)</span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=目利きの銀次新都心店">📍地圖</a></div>
+        </div>
     </div>
 
     <div class="day-card">
-        <div class="day-title">Day 5：首里城與回程</div>
+        <div class="day-title">Day 5：文化巡禮與歸途</div>
         <div class="transport">🚲 交通：單軌電車</div>
         <div class="time-slot"><div class="info"><span class="time">09:30</span><span>首里城</span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=首里城">📍地圖</a></div>
-        <div class="time-slot"><div class="info"><span class="time">12:00</span><span><span class="food-tag">通堂拉麵</span> (小祿店)</span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=通堂拉麵小祿站">📍地圖</a></div>
+        <div class="dinner-box">
+            <span class="dinner-title">🍴 午餐/完結推薦：</span>
+            <div class="time-slot"><div class="info"><span><span class="food-tag">通堂拉麵</span> (小祿站)</span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=通堂拉麵小祿店">📍地圖</a></div>
+            <div class="time-slot"><div class="info"><span><span class="food-tag">首里麵</span> (道地口味)</span></div><a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=首里麵">📍地圖</a></div>
+        </div>
+    </div>
+
+    <div class="extra-section">
+        <h3>💡 額外加碼推薦</h3>
+        <ul style="padding-left: 20px;">
+            <li><b>點心：</b>富士屋傳統紅豆冰 <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=富士屋紅豆冰">📍地圖</a></li>
+            <li><b>冰淇淋：</b>Blue Seal 國際通店 <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Blue+Seal國際通">📍地圖</a></li>
+            <li><b>美食：</b>氾濫漢堡 (瀨長島) <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=氾濫漢堡瀨長島">📍地圖</a></li>
+            <li><b>美食：</b>世界第二好吃冰淇淋菠蘿麵包 (來客夢)</li>
+        </ul>
     </div>
 
     <div class="tips-section">
